@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BIT · Bienestar, Innovación y Transparencia</title>
+  <meta name="description" content="Partido BIT — candidatura a la Presidencia y Vicepresidencia del Centro de Estudiantes de Ciencia de la Computación (UNSA), periodo 2027-A – 2028-A. Construyendo soluciones, BIT a bit.">
+  <meta property="og:title" content="BIT · Construyendo soluciones, BIT a bit">
+  <meta property="og:description" content="Conoce a nuestros candidatos y propuestas para el Centro de Estudiantes EPCC 2027-A – 2028-A.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== NAVEGACIÓN ===================== -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Inicio BIT">
+        <img src="assets/logo-bit.svg" alt="BIT" width="67" height="32">
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="nav-menu">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#candidatos">Candidatos</a>
+        <a href="#propuestas">Propuestas</a>
+        <a href="#compromisos">Compromisos</a>
+        <a href="#votar">¿Cómo votar?</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto" class="btn btn--small">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero__bits" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <img class="hero__logo" src="assets/logo-bit.svg" alt="Logo de BIT" width="292" height="140">
+        <p class="hero__eyebrow mono">&gt; Elecciones CE · EPCC · UNSA · 2027-A – 2028-A</p>
+        <h1 class="hero__title">
+          <span class="hl">B</span>ienestar,
+          <span class="hl">I</span>nnovación y
+          <span class="hl">T</span>ransparencia
+        </h1>
+        <p class="hero__slogan">“Construyendo soluciones, <strong>BIT a bit</strong>”</p>
+
+        <div class="hero__duo">
+          <div><span class="tag">Presidente</span><strong>Mauricio Cornejo</strong></div>
+          <div><span class="tag">Vicepresidente</span><strong>Jesús Alfaro</strong></div>
+        </div>
+
+        <div class="hero__cta">
+          <a href="#propuestas" class="btn">Ver propuestas</a>
+          <a href="#votar" class="btn btn--ghost">¿Cómo votar?</a>
+        </div>
+
+        <div class="countdown" id="countdown" aria-live="polite">
+          <p class="countdown__label mono">Jornada electoral · vie 27 nov · 08:00 – 14:00</p>
+          <div class="countdown__grid">
+            <div><span id="cd-d">--</span><small>días</small></div>
+            <div><span id="cd-h">--</span><small>horas</small></div>
+            <div><span id="cd-m">--</span><small>min</small></div>
+            <div><span id="cd-s">--</span><small>seg</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NOSOTROS / PILARES ===================== -->
+    <section class="section" id="nosotros">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow mono">01 · ¿Quiénes somos?</p>
+          <h2>Somos BIT</h2>
+          <!-- TODO: Reemplazar con la misión/visión real del partido -->
+          <p class="lead">
+            Somos estudiantes de 4.º año de Ciencia de la Computación que creemos que los grandes cambios
+            se construyen paso a paso: <strong>BIT a bit</strong>. Nuestra propuesta se sostiene en tres pilares.
+          </p>
+        </header>
+
+        <div class="pillars">
+          <article class="pillar pillar--b">
+            <div class="pillar__letter mono">B</div>
+            <h3>Bienestar</h3>
+            <!-- TODO: descripción del pilar -->
+            <p>Un Centro de Estudiantes que cuide a su comunidad: salud mental, espacios dignos, integración y acompañamiento académico.</p>
+          </article>
+          <article class="pillar pillar--i">
+            <div class="pillar__letter mono">I</div>
+            <h3>Innovación</h3>
+            <!-- TODO: descripción del pilar -->
+            <p>Aprovechar lo que sabemos hacer —tecnología— para resolver problemas reales de la Escuela y abrir oportunidades.</p>
+          </article>
+          <article class="pillar pillar--t">
+            <div class="pillar__letter mono">T</div>
+            <h3>Transparencia</h3>
+            <!-- TODO: descripción del pilar -->
+            <p>Cuentas claras y comunicación abierta: que cada estudiante sepa qué se hace, cómo y con qué recursos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CANDIDATOS ===================== -->
+    <section class="section section--alt" id="candidatos">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow mono">02 · Candidatos</p>
+          <h2>Nuestra fórmula</h2>
+        </header>
+
+        <div class="candidates">
+          <article class="candidate">
+            <div class="candidate__body">
+              <span class="tag">Candidato a Presidente</span>
+              <h3>Mauricio Andrés Cornejo Álvarez</h3>
+              <p class="candidate__meta mono">4.º año · Ciencia de la Computación</p>
+              <!-- TODO: bio breve (2–3 líneas) -->
+              <p>[Bio pendiente: motivación para postular, experiencia previa en proyectos, voluntariados, delegaturas, etc.]</p>
+              <ul class="candidate__facts">
+                <!-- TODO: logros / intereses -->
+                <li>[Logro o experiencia 1]</li>
+                <li>[Logro o experiencia 2]</li>
+                <li>[Área de interés: p. ej. IA, desarrollo web…]</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="candidate">
+            <div class="candidate__body">
+              <span class="tag">Candidato a Vicepresidente</span>
+              <h3>Jesús Alberto Alfaro Buiza</h3>
+              <p class="candidate__meta mono">4.º año · Ciencia de la Computación</p>
+              <!-- TODO: bio breve -->
+              <p>[Bio pendiente: motivación para postular, experiencia previa, qué aporta a la fórmula.]</p>
+              <ul class="candidate__facts">
+                <li>[Logro o experiencia 1]</li>
+                <li>[Logro o experiencia 2]</li>
+                <li>[Área de interés]</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROPUESTAS ===================== -->
+    <section class="section" id="propuestas">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow mono">03 · Plan de trabajo 2027-A – 2028-A</p>
+          <h2>Propuestas</h2>
+          <p class="lead"><strong id="proposal-count">Más de 25</strong> propuestas organizadas en nuestros tres pilares. Filtra por pilar para explorarlas.</p>
+        </header>
+
+        <aside class="portal">
+          <div class="portal__text">
+            <p class="eyebrow mono">// propuesta eje</p>
+            <h3>Todo en un solo lugar: el Portal del Centro de Estudiantes</h3>
+            <p>Muchas de nuestras propuestas se reúnen en una plataforma web hecha por y para estudiantes de Computación.</p>
+          </div>
+          <ul class="portal__modules" id="portal-modules"></ul>
+        </aside>
+
+        <div class="filters" role="tablist" aria-label="Filtrar propuestas por pilar">
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">Todas</button>
+          <button class="filter" data-filter="B" role="tab" aria-selected="false">Bienestar</button>
+          <button class="filter" data-filter="I" role="tab" aria-selected="false">Innovación</button>
+          <button class="filter" data-filter="T" role="tab" aria-selected="false">Transparencia</button>
+        </div>
+
+        <!-- Las propuestas se generan desde js/data.js -->
+        <div class="proposals" id="proposals"></div>
+
+        <div class="open-ideas">
+          <p><strong>Y muchas más.</strong> No nos cerramos: siempre estamos dispuestos a escuchar. ¿Tienes una idea?</p>
+          <a href="#contacto" class="btn">Compártela con nosotros</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMPROMISOS ===================== -->
+    <section class="section section--alt" id="compromisos">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow mono">04 · Campaña limpia</p>
+          <h2>Nuestros compromisos</h2>
+          <p class="lead">La transparencia empieza desde la campaña. En BIT nos comprometemos a:</p>
+        </header>
+        <ul class="commitments">
+          <li><span class="mono">0x01</span> No ofrecer ni entregar regalos, comida, dinero ni beneficios a cambio de votos.</li>
+          <li><span class="mono">0x02</span> Hacer campaña con respeto: cero ataques ni campaña negativa contra otros partidos.</li>
+          <li><span class="mono">0x03</span> Colocar afiches solo en espacios autorizados y retirarlos dentro de las 48 h posteriores a la elección.</li>
+          <li><span class="mono">0x04</span> Ser independientes de cualquier partido político nacional.</li>
+          <li><span class="mono">0x05</span> Publicar informes de gestión periódicos si resultamos electos.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== CÓMO VOTAR / CRONOGRAMA ===================== -->
+    <section class="section" id="votar">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow mono">05 · Tu voto cuenta</p>
+          <h2>¿Cómo votar?</h2>
+        </header>
+
+        <div class="vote">
+          <div class="vote__info card">
+            <h3>Datos clave</h3>
+            <dl>
+              <dt>Fecha</dt><dd>Viernes 27 de noviembre de 2026</dd>
+              <dt>Horario</dt><dd>08:00 – 14:00 h</dd>
+              <dt>Lugar</dt><dd>Oficina del Centro de Estudiantes de la Escuela</dd>
+              <dt>Lleva</dt><dd><strong>Carné universitario + DNI</strong> (ambos obligatorios)</dd>
+              <dt>Quién vota</dt><dd>Todo estudiante activo de la EPCC</dd>
+            </dl>
+          </div>
+
+          <ol class="steps">
+            <li><strong>Acércate</strong> a la oficina del Centro de Estudiantes.</li>
+            <li><strong>Identifícate</strong> con tu carné universitario y tu DNI.</li>
+            <li><strong>Recibe</strong> la cédula firmada por el Presidente del Comité Electoral.</li>
+            <li><strong>Marca</strong> con un aspa (X) o cruz (+) dentro del recuadro de <strong>BIT</strong>.</li>
+            <li><strong>Deposita</strong> la cédula doblada en el ánfora y firma la lista.</li>
+          </ol>
+        </div>
+
+        <h3 class="subhead">Cronograma electoral</h3>
+        <ol class="timeline" id="timeline">
+          <li data-date="2026-11-17" data-end="2026-11-21"><time>17–21 nov</time><span>Inscripción de partidos</span></li>
+          <li data-date="2026-11-22"><time>22 nov</time><span>Publicación de partidos aptos</span></li>
+          <li data-date="2026-11-23" data-end="2026-11-25"><time>23–25 nov</time><span>Campaña electoral</span></li>
+          <li data-date="2026-11-26"><time>26 nov</time><span>Debate virtual de partidos</span></li>
+          <li data-date="2026-11-27" class="timeline__key"><time>27 nov</time><span>Jornada electoral, escrutinio y proclamación</span></li>
+          <li data-date="2027-03-01"><time>2027-A</time><span>Inicio del periodo de gestión</span></li>
+        </ol>
+        <p class="note">Fuente: Bases de las Elecciones del Centro de Estudiantes EPCC, periodo 2027-A – 2028-A.</p>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <header class="section__head">
+          <p class="eyebrow mono">06 · Preguntas frecuentes</p>
+          <h2>FAQ</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>¿Qué significa BIT?</summary>
+            <p><strong>B</strong>ienestar, <strong>I</strong>nnovación y <strong>T</strong>ransparencia. Y también la unidad mínima de información: creemos que las soluciones se construyen BIT a bit.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto dura el periodo de gestión?</summary>
+            <p>Desde el inicio del semestre 2027-A hasta el inicio del semestre 2028-A.</p>
+          </details>
+          <details>
+            <summary>¿Qué pasa si ningún partido alcanza 50 votos?</summary>
+            <p>Según las bases, la elección se declara nula y se convoca una nueva. ¡Por eso tu voto es importante!</p>
+          </details>
+          <details>
+            <summary>¿Puedo votar sin DNI o sin carné?</summary>
+            <p>No. Ambos documentos son obligatorios para votar.</p>
+          </details>
+          <details>
+            <summary>¿Cómo puedo sumarme al equipo de BIT?</summary>
+            <!-- TODO: indicar el canal real -->
+            <p>Escríbenos por nuestras redes (sección Contacto). Tras la elección, la fórmula electa conformará su equipo de trabajo.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow mono">07 · Hablemos</p>
+          <h2>Contacto y redes</h2>
+          <p class="lead">¿Tienes una idea o un problema que quieras que resolvamos? Cuéntanos.</p>
+        </header>
+        <!-- TODO: reemplazar los href="#" con los enlaces reales -->
+        <div class="socials">
+          <a class="social" href="#" target="_blank" rel="noopener">Instagram<span class="mono">@[pendiente]</span></a>
+          <a class="social" href="#" target="_blank" rel="noopener">TikTok<span class="mono">@[pendiente]</span></a>
+          <a class="social" href="#" target="_blank" rel="noopener">Facebook<span class="mono">[pendiente]</span></a>
+          <a class="social" href="#" target="_blank" rel="noopener">WhatsApp<span class="mono">[pendiente]</span></a>
+          <a class="social" href="#" target="_blank" rel="noopener">Buzón de ideas<span class="mono">Google Form [pendiente]</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo-bit.svg" alt="BIT" width="58" height="28">
+        <span>Construyendo soluciones, BIT a bit</span>
+      </div>
+      <p class="footer__note">Partido estudiantil independiente · Elecciones del Centro de Estudiantes EPCC – UNSA · 2026</p>
+      <a href="#top" class="mono">↑ volver arriba</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
