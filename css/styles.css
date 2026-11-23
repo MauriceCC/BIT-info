@@ -256,15 +256,8 @@ h1, h2, h3 { line-height: 1.15; margin: 0 0 .5em; }
 .faq details[open] summary::after { content: "−"; }
 .faq details p { margin: 0 0 1rem; color: var(--muted); }
 
-/* ---------- Contacto ---------- */
-.socials { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1rem; }
-.social {
-  display: flex; flex-direction: column; gap: .2rem;
-  padding: 1.2rem; border-radius: var(--radius); border: 1px solid var(--line);
-  text-decoration: none; font-weight: 700; transition: border-color .15s, transform .15s;
-}
-.social:hover { border-color: var(--brand); transform: translateY(-2px); }
-.social span { font-weight: 500; font-size: .8rem; color: var(--muted); }
+/* ---------- Buzón de sugerencias ---------- */
+.suggestion-form { text-align: center; }
 
 /* ---------- Footer ---------- */
 .footer { background: var(--dark); color: rgba(255,255,255,.8); padding: 2rem 0; font-size: .9rem; }
