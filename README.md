@@ -31,4 +31,11 @@ Abre `index.html` en el navegador (no necesita servidor).
 
 ## Publicar (GitHub Pages)
 
-Settings → Pages → Branch `main` / root.
+URL: **https://mauricecc.github.io/BIT-info/**
+
+1. En GitHub: **Settings → Pages**.
+2. *Source*: **Deploy from a branch** → Branch **`main`**, carpeta **`/ (root)`** → **Save**.
+3. Espera 1–2 minutos; cada `git push` a `main` actualiza la web automáticamente.
+
+Archivos de soporte: `.nojekyll` (sirve los archivos tal cual), `404.html` (página de error) y
+`assets/og-image.png` (vista previa al compartir el link en WhatsApp/redes).
