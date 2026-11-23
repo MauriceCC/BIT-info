@@ -119,12 +119,6 @@ const PROPOSALS = [
   },
   {
     pillar: "T",
-    title: "Portal de transparencia",
-    desc: "Publicación abierta de actas, acuerdos, actividades realizadas y uso de recursos del Centro de Estudiantes.",
-    portal: true,
-  },
-  {
-    pillar: "T",
     title: "Bandeja de sugerencias",
     desc: "Un canal permanente para enviar ideas, reclamos o propuestas, con seguimiento visible de cada una.",
     portal: true,
@@ -140,21 +134,6 @@ const PROPOSALS = [
     title: "Difusión de eventos",
     desc: "Daremos a conocer eventos de la carrera y también actividades culturales, sociales y de cualquier rubro que puedan interesar a los estudiantes.",
     portal: true,
-  },
-  {
-    pillar: "T",
-    title: "Comisiones de trabajo",
-    desc: "Crearemos, para empezar, una comisión académica y una social, abiertas a la participación de los estudiantes.",
-  },
-  {
-    pillar: "T",
-    title: "Delegados por ciclo",
-    desc: "Un delegado general por cada ciclo académico como puente directo entre los estudiantes y el Centro.",
-  },
-  {
-    pillar: "T",
-    title: "Voz estudiantil en la calidad académica",
-    desc: "Promoveremos la participación de los estudiantes en los procesos de mejora de la calidad académica de la Escuela.",
   },
 ];
 

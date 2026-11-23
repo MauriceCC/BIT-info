@@ -164,9 +164,16 @@ h1, h2, h3 { line-height: 1.15; margin: 0 0 .5em; }
 .pillar p { color: var(--muted); margin: 0; }
 
 /* ---------- Candidatos ---------- */
-.candidates { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
+.candidates { display: grid; gap: 1.5rem; }
 .candidate { background: var(--bg); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--line); border-top: 5px solid var(--brand); }
 .candidate:nth-child(2) { border-top-color: var(--brand-2); }
+.candidate--with-photo { display: grid; grid-template-columns: minmax(180px, 240px) minmax(0, 1fr); align-items: center; }
+.candidate__photo { display: block; width: 100%; height: auto; }
+.candidate__body { min-width: 0; }
+@media (max-width: 640px) {
+  .candidate--with-photo { grid-template-columns: 1fr; }
+  .candidate__photo { width: auto; max-width: 100%; max-height: 280px; margin: 1.5rem auto 0; border-radius: 12px; }
+}
 .candidate__body { padding: 1.5rem; }
 .candidate__body h3 { font-size: 1.35rem; margin-top: .6rem; }
 .candidate__meta { color: var(--muted); font-size: .85rem; margin: -.3rem 0 .8rem; }
@@ -213,14 +220,6 @@ h1, h2, h3 { line-height: 1.15; margin: 0 0 .5em; }
 }
 .open-ideas p { margin: 0; }
 @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-
-/* ---------- Compromisos ---------- */
-.commitments { list-style: none; padding: 0; margin: 0; display: grid; gap: .8rem; }
-.commitments li {
-  display: flex; gap: 1rem; align-items: baseline;
-  background: var(--bg); padding: 1rem 1.25rem; border-radius: 12px; border: 1px solid var(--line);
-}
-.commitments .mono { color: var(--brand); font-weight: 700; flex-shrink: 0; }
 
 /* ---------- Cómo votar ---------- */
 .vote { display: grid; grid-template-columns: 1fr 1.2fr; gap: 1.5rem; align-items: start; }
