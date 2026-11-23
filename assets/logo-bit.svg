@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="220 140 585 280" role="img" aria-label="BIT">
+  <!-- Logo BIT vectorizado a partir de assets/img/logo-original.jpeg -->
+  <polygon fill="#224694" points="269,145 577,145 374,413 227,413"/>
+  <polygon fill="#0f9989" points="604,145 796,145 738,413 401,413"/>
+  <g fill="#ffffff">
+    <path fill-rule="evenodd" d="M312 194 H420 C445 194 460 208 460 230 C460 248 452 259 440 265 C460 272 472 288 472 310 C472 342 452 364 422 364 H312 Z M354 227 H406 C417 227 424 235 424 244 C424 254 417 261 406 261 H354 Z M353 294 H412 C424 294 432 302 432 312.5 C432 323 424 331 412 331 H353 Z"/>
+    <rect x="495" y="194" width="40" height="170"/>
+    <rect x="535" y="194" width="178" height="34"/>
+    <rect x="616" y="194" width="40" height="170"/>
+  </g>
+</svg>
