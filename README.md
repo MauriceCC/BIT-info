@@ -21,9 +21,8 @@ assets/           Logo, favicon y fotos de los candidatos
 
 - **Propuestas:** `js/data.js`.
 - **Colores:** variables `--brand`, `--brand-2`, `--b`, `--i`, `--t` en `css/styles.css`.
-- **Fotos:** guarda `assets/mauricio.jpg` y `assets/jesus.jpg` y en `index.html` cambia
-  `<div class="candidate__photo" data-initials="MC" ...>` por
-  `<div class="candidate__photo" style="background-image:url(assets/mauricio.jpg)" ...>`.
+- **Fotos:** usa versiones optimizadas de 600×800 px (3:4) en `assets/img/`, en `.jpg` y `.webp`
+  (p. ej. `mauricio-cornejo.jpg` + `mauricio-cornejo.webp`). Una foto de celular sin optimizar pesa más de 1 MB.
 - Busca `TODO` y `[pendiente]` en `index.html` para ver lo que falta.
 
 ## Ver en local

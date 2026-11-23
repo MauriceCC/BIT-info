@@ -41,6 +41,11 @@ const PROPOSALS = [
   },
   {
     pillar: "B",
+    title: "Coordinación con Tutoría",
+    desc: "Trabajaremos de la mano con el área de Tutoría para velar por el bienestar de los estudiantes y derivar a tiempo los casos que necesiten apoyo.",
+  },
+  {
+    pillar: "B",
     title: "Directorio de becas",
     desc: "Reuniremos y difundiremos becas, intercambios y convocatorias para que ninguna oportunidad pase desapercibida.",
     portal: true,
@@ -115,6 +120,12 @@ const PROPOSALS = [
     pillar: "T",
     title: "Portal del Centro de Estudiantes",
     desc: "Una sola web que reúne todos los servicios del Centro: información, recursos, eventos y rendición de cuentas.",
+    portal: true,
+  },
+  {
+    pillar: "T",
+    title: "Portal de transparencia",
+    desc: "Publicación abierta de actas, acuerdos, actividades realizadas y uso de recursos del Centro de Estudiantes.",
     portal: true,
   },
   {
