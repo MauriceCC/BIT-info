@@ -257,31 +257,63 @@ h1, h2, h3 { line-height: 1.15; margin: 0 0 .5em; }
 .list-pill--small { font-size: .7rem; padding: .2rem .6rem; margin-left: .6rem; border-width: 1px; }
 .hero__logo + p { margin: 0 0 1.2rem; }
 
-/* Cédula referencial */
-.vote { grid-template-areas: "info steps" "ballot steps"; }
-.vote__info { grid-area: info; }
-.steps { grid-area: steps; }
-.ballot { grid-area: ballot; margin: 0; padding: 1.25rem; border-radius: var(--radius); border: 2px dashed var(--line); background: var(--bg); }
-@media (max-width: 760px) { .vote { grid-template-areas: "info" "ballot" "steps"; } }
-.ballot__title { font-size: .8rem; font-weight: 700; color: var(--brand); margin-bottom: .8rem; text-transform: uppercase; }
-.ballot__row {
-  display: grid; grid-template-columns: auto auto 1fr auto; align-items: center; gap: .9rem;
-  padding: .8rem; border: 2px solid var(--ink); border-radius: 8px; background: #fff;
+/* Cédula referencial (bloque "Así marcas tu voto") */
+.mark {
+  margin-top: 2.5rem; padding: 2.5rem; border-radius: 24px; color: #fff;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); gap: 2.5rem; align-items: center;
+  background: radial-gradient(600px 300px at 100% 0%, rgba(15,153,137,.45), transparent 70%),
+              radial-gradient(500px 300px at 0% 100%, rgba(34,70,148,.6), transparent 70%), var(--dark);
+  box-shadow: 0 30px 60px -30px rgba(11,16,32,.6);
 }
-.ballot__num { display: flex; flex-direction: column; align-items: center; font-family: var(--mono); font-weight: 700; font-size: 1.6rem; line-height: 1; color: var(--ink); }
-.ballot__num small { font-size: .6rem; text-transform: uppercase; letter-spacing: .08em; margin-bottom: .2rem; }
-.ballot__logo { width: 88px; height: auto; }
-.ballot__name { display: flex; flex-direction: column; line-height: 1.2; color: var(--ink); min-width: 0; }
-.ballot__name small { font-size: .72rem; color: var(--muted); }
-.ballot__box { width: 52px; height: 52px; border: 3px solid var(--ink); border-radius: 4px; display: grid; place-items: center; }
-.ballot__box svg { width: 40px; height: 40px; }
-.ballot__box path { fill: none; stroke: #c81e1e; stroke-width: 4.5; stroke-linecap: round; }
-.ballot__note { margin: .7rem 0 0; font-size: .8rem; color: var(--muted); }
-@media (max-width: 420px) {
-  .ballot__row { gap: .6rem; padding: .6rem; }
-  .ballot__logo { width: 64px; }
-  .ballot__name small { display: none; }
-  .ballot__box { width: 44px; height: 44px; }
+.mark .eyebrow { color: #3fd1bf; }
+.mark h3 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); font-weight: 800; letter-spacing: -.02em; }
+.mark__hl { background: linear-gradient(135deg, #6f9be8, #3fd1bf); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.mark__text p { margin: 0 0 .8rem; opacity: .9; font-size: 1.05rem; }
+.mark__text .mark__note { font-size: .8rem; opacity: .6; margin: 1.2rem 0 0; }
+
+.ballot {
+  margin: 0; padding: 1.4rem; background: #fdfdfb; color: var(--ink); border-radius: 6px;
+  box-shadow: 0 20px 40px -12px rgba(0,0,0,.55); rotate: -1.2deg;
+}
+.ballot__head { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); text-align: center; padding-bottom: .8rem; margin-bottom: 1rem; border-bottom: 1px dashed #cbd5e1; }
+.ballot__row {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 1rem; align-items: center;
+  padding: 1rem; border: 2px solid var(--ink); border-radius: 4px;
+}
+.ballot__name { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
+.ballot__name strong { font-size: 1.8rem; font-weight: 800; }
+.ballot__name small { font-size: .85rem; color: var(--muted); }
+.ballot__box {
+  position: relative; width: 150px; height: 150px; border: 3px solid var(--ink); border-radius: 4px;
+  display: grid; place-items: center; background: #fff;
+}
+.ballot__box--logo img { width: 84%; height: auto; }
+.ballot__box--num span { font-family: var(--mono); font-weight: 700; font-size: 6rem; line-height: 1; color: var(--ink); }
+.ballot__x { position: absolute; inset: 6%; width: 88%; height: 88%; overflow: visible; }
+.ballot__x path { fill: none; stroke: #d11a2a; stroke-width: 9; stroke-linecap: round; opacity: .92; }
+
+/* Animación: el aspa se "dibuja" al aparecer */
+.ballot.reveal .ballot__x path { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.ballot.reveal.is-visible .ballot__x path { animation: draw .45s ease-out forwards; }
+.ballot.reveal.is-visible .ballot__x path:nth-child(2) { animation-delay: .35s; }
+.ballot.reveal.is-visible .ballot__box--num .ballot__x path:nth-child(1) { animation-delay: .8s; }
+.ballot.reveal.is-visible .ballot__box--num .ballot__x path:nth-child(2) { animation-delay: 1.15s; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) { .ballot .ballot__x path { stroke-dashoffset: 0 !important; animation: none !important; } }
+
+@media (max-width: 960px) {
+  .mark { grid-template-columns: 1fr; padding: 2rem 1.5rem; gap: 1.8rem; }
+  .ballot__box { width: 120px; height: 120px; }
+  .ballot__box--num span { font-size: 4.8rem; }
+}
+@media (max-width: 560px) {
+  .mark { padding: 1.6rem 1rem; }
+  .ballot { padding: 1rem; rotate: 0deg; }
+  .ballot__row { grid-template-columns: 1fr 1fr; gap: .8rem; padding: .8rem; }
+  .ballot__name { grid-column: 1 / -1; text-align: center; }
+  .ballot__name strong { font-size: 1.4rem; }
+  .ballot__box { width: 100%; height: auto; aspect-ratio: 1; }
+  .ballot__box--num span { font-size: 4.2rem; }
 }
 .inline-logo { display: inline-block; height: 1.1em; width: auto; vertical-align: -.15em; }
 

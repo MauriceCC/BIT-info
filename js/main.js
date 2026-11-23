@@ -133,7 +133,7 @@ const io = new IntersectionObserver(
   (entries) => entries.forEach((e) => e.isIntersecting && (e.target.classList.add("is-visible"), io.unobserve(e.target))),
   { threshold: 0.12 }
 );
-document.querySelectorAll(".section__head, .pillar, .candidate, .steps li, .timeline li").forEach((el) => {
+document.querySelectorAll(".section__head, .pillar, .candidate, .steps li, .timeline li, .ballot").forEach((el) => {
   el.classList.add("reveal");
   io.observe(el);
 });
