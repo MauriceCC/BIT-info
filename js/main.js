@@ -78,8 +78,8 @@ document.querySelectorAll(".filter").forEach((btn) =>
 renderProposals();
 
 // ---------- Cuenta regresiva (hora de Perú, UTC-5) ----------
-const ELECTION_START = new Date("2026-11-27T08:00:00-05:00");
-const ELECTION_END = new Date("2026-11-27T14:00:00-05:00");
+const ELECTION_START = new Date("2026-11-30T08:00:00-05:00");
+const ELECTION_END = new Date("2026-11-30T14:00:00-05:00");
 const cd = document.getElementById("countdown");
 const pad = (n) => String(n).padStart(2, "0");
 
@@ -110,7 +110,7 @@ tick();
 (function markTimeline() {
   const today = new Date();
   const ymd = (s) => new Date(s + "T00:00:00-05:00");
-  document.querySelectorAll("#timeline li").forEach((li) => {
+  document.querySelectorAll("#timeline li[data-date]").forEach((li) => {
     const start = ymd(li.dataset.date);
     const end = ymd(li.dataset.end || li.dataset.date);
     end.setDate(end.getDate() + 1);

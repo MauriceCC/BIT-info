@@ -168,8 +168,8 @@ h1, h2, h3 { line-height: 1.15; margin: 0 0 .5em; }
 .candidate { background: var(--bg); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--line); border-top: 5px solid var(--brand); }
 .candidate:nth-child(2) { border-top-color: var(--brand-2); }
 .candidate--with-photo { display: grid; grid-template-columns: minmax(200px, 260px) minmax(0, 1fr); align-items: stretch; }
-.candidate--with-photo picture { display: block; min-height: 100%; }
-.candidate__photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
+.candidate--with-photo picture { display: block; align-self: start; }
+.candidate__photo { display: block; width: 100%; height: auto; }
 .candidate__body { min-width: 0; }
 @media (max-width: 640px) {
   .candidate--with-photo { grid-template-columns: 1fr; }
